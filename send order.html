@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Shop</title>
+    
+    <style >
+        
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.item-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+    </style>
+</head>
+<body>
+    <div class="item-box">
+        <h2> About the Item </h2>
+        <p><strong>Information:</strong> <br> Name : Rambo 5pro <br>
+        ram 4gb <br>
+        storage capacity /rom :128 Gb <br> 
+        battery : long life <br>
+        Camera :Sharp <br>
+         made in USA <br> in good condition </p>
+        <p><strong>Location:</strong> Lagos</p>
+        <p><strong>Contact the Seller:</strong> <a href="laughterebitu@gmail.com">Email Seller</a></p>
+        
+        <h3>Made payment </h3>
+        
+            <label for="payment-method">Choose Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="card">Card</option>
+                <option value="transfer">Bank Transfer</option>
+                <option value="sms">SMS Transfer</option>
+                <option value="online">Online Transfer</option>
+            </select>
+
+            <h4>Buyer Information</h4>
+            <label for="buyer-name">Name:</label>
+            <input type="text" id="buyer-name" name="buyer-name" required>
+
+            <label for="buyer-email">Email:</label>
+            <input type="email" id="buyer-email" name="buyer-email" required>
+
+            <label for="buyer-phone">Phone:</label>
+            <input type="tel" id="buyer-phone" name="buyer-phone" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
